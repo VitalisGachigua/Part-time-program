@@ -45,38 +45,40 @@
 
   <h1 class="text-4xl font-bold mb-8 text-slate-900">Contact Us</h1>
 
-  <form action="https://test2-0phase.app.n8n.cloud/webhook-test/11793f5c-723a-4981-b465-bbc1538fea10" method="POST" class="bg-white p-6 rounded-2xl shadow-lg space-y-5">
+<form id="contactForm" class="bg-white p-6 rounded-2xl shadow-lg space-y-5">
 
-    <div>
-      <label class="block mb-1 font-semibold">Full Name</label>
-      <input type="text" name="name" required
-        class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400">
-    </div>
+  <div>
+    <label class="block mb-1 font-semibold">Full Name</label>
+    <input type="text" name="name" required
+      class="w-full p-3 border rounded-xl">
+  </div>
 
-    <div>
-      <label class="block mb-1 font-semibold">Email</label>
-      <input type="email" name="email" required
-        class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400">
-    </div>
+  <div>
+    <label class="block mb-1 font-semibold">Email</label>
+    <input type="email" name="email" required
+      class="w-full p-3 border rounded-xl">
+  </div>
 
-    <div>
-      <label class="block mb-1 font-semibold">Phone Number</label>
-      <input type="tel" name="phone"
-        class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400">
-    </div>
+  <div>
+    <label class="block mb-1 font-semibold">Phone</label>
+    <input type="tel" name="phone"
+      class="w-full p-3 border rounded-xl">
+  </div>
 
-    <div>
-      <label class="block mb-1 font-semibold">Message</label>
-      <textarea name="message" rows="4" required
-        class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400"></textarea>
-    </div>
+  <div>
+    <label class="block mb-1 font-semibold">Message</label>
+    <textarea name="message" required rows="4"
+      class="w-full p-3 border rounded-xl"></textarea>
+  </div>
 
-    <button type="submit"
-      class="bg-amber-400 px-6 py-3 rounded-xl font-semibold hover:bg-amber-500">
-      Send Message
-    </button>
+  <button id="submitBtn"
+    class="bg-amber-400 px-6 py-3 rounded-xl font-semibold hover:bg-amber-500">
+    Send Message
+  </button>
 
-  </form>
+  <p id="formStatus" class="text-sm mt-2"></p>
+
+</form>
 
 </main>
 
